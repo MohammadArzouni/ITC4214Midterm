@@ -2,15 +2,17 @@
 <html lang="en">
 
 <head>
+  <!-- Similar to the index page header -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Since Bootstrap was used, referencing its library allows it to be used -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
 </head>
 
 <body>
-  <!-- Sticky Header -->
+  <!-- Sticky header, same as index page -->
   <header class="sticky-header">
     <div class="logo">
       <img src="logo.png" alt="Header Logo">
@@ -23,7 +25,7 @@
     </nav>
   </header>
 
-  <!-- About Section -->
+  <!-- About page, using Bootstrap's text manipulation to emphasize the ME -->
   <section class="about-section">
     <div class="container">
       <h2 class="text-center">
@@ -33,20 +35,21 @@
     </div>
   </section>
 
-  <!-- Carousel Section -->
+  <!-- Carousel section -->
   <section class="carousel-section">
     <div class="container">
+      <!-- Keeps the carousel centered within the page -->
       <div class="row justify-content-center">
-        <!-- Carousel -->
+        <!-- Code to create the carousel -->
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
           <ol class="carousel-indicators">
-            <!-- Carousel Indicators -->
+            <!-- Adding the indicators on the bottom of the carousel that indicate the number of images -->
             <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
             <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
             <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
-            <!-- Carousel Items -->
+            <!-- Carousel images -->
             <div class="carousel-item active">
               <img src="carousel-1.jpg" class="d-block mx-auto" alt="Slide 1">
             </div>
@@ -57,29 +60,30 @@
               <img src="carousel-3.jpg" class="d-block mx-auto" alt="Slide 3">
             </div>
           </div>
-          <!-- Carousel Controls -->
+          <!-- Carousel arrows on the side for navigation -->
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </a>
           <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Next</span>
-</a>
-</div>
-</div>
-</div>
-
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
   </section>
   <br>
   <br>
-  <!-- Grid Card Section -->
+  <!-- Grid card section -->
   <section class="grid-cards-section">
     <div class="container">
+      <!-- ALso centered like the carousel -->
       <div class="row justify-content-center">
         <div class="col-md-4">
-          <!-- Grid Card -->
+          <!-- Grid card -->
           <div class="card">
+            <!-- Avatar and information for the grid card -->
             <img src="avatar.png" class="card-img-top" alt="Avatar">
             <div class="card-body">
               <h5 class="card-title">Mohammad Arzouni</h5>
@@ -90,7 +94,7 @@
       </div>
     </div>
   </section>
-  <!-- Footer -->
+  <!-- Sticky footer, same as index page -->
   <footer class="footer">
     <div class="logo">
       <img src="logo.png" alt="Footer Logo">
