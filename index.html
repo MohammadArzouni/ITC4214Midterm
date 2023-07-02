@@ -41,7 +41,23 @@
       <button type="submit">Add</button>
     </form>
   <br>
-    
+    <!-- TV show table -->
+  <table id="show-list">
+    <thead>
+      <tr>
+        <!-- TV show name column with a sort button -->
+        <th data-column="name">TV Show <button class="sort-btn" data-column="name">Sort</button></th>
+        <!-- Genre column with a sort button -->
+        <th data-column="genre">Genre <button class="sort-btn" data-column="genre">Sort</button></th>
+        <!-- Actions column -->
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Table rows will be dynamically generated from the input added by the user -->
+    </tbody>
+  </table>
+
 
     
   </body>
